@@ -3,6 +3,8 @@
 // React - https://reactjs.org/docs/getting-started.html
 // React Router Dom - https://reactrouter.com/
 // Firebase - https://firebase.google.com/docs/auth/web/google-signin#web-version-9_3
+// - Firestore data model - https://firebase.google.com/docs/firestore/data-model (collection, document, data)
+// Styled Components - https://styled-components.com/
 
 import { Routes, Route } from 'react-router-dom';
 
@@ -18,7 +20,7 @@ const App = () => {
       <Route path='/' element={<Navigation />}>
         {/* index - if passed, render the component if the url matches that of its parent */}
         <Route index element={<Home />} />
-        <Route path='shop' element={<Shop />} />
+        <Route path='shop/*' element={<Shop />} />
         <Route path='auth' element={<Authentication />} />
         <Route path='checkout' element={<Checkout />} />
       </Route>
