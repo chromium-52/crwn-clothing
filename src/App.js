@@ -5,6 +5,7 @@
 // Firebase - https://firebase.google.com/docs/auth/web/google-signin#web-version-9_3
 // - Firestore data model - https://firebase.google.com/docs/firestore/data-model (collection, document, data)
 // Styled Components - https://styled-components.com/
+// Netlify - https://www.netlify.com/
 
 import { Routes, Route } from 'react-router-dom';
 
